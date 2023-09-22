@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="design.css" />
+  </head>
+  <body>
+    <div class="header">
+      <img src="../frontPage/BE-Computer-Science2.png" alt="" class="headerImg" />
+      VisAlgo.com
+      <a href="../frontPage/frontPage.html" class="home"> Home</a>
+    </div>
+
+    <div class="container">
+      <div class="leftItem">
+        <h1>Selection Sort</h1> 
+        <div id="parentDiv">
+           
+        </div>
+        
+        <div id="buttonBox">
+            <button id="restartBtn" onclick="stop()">Stop</button>
+            <button id="startBtn" onclick="sorting()">Start</button>
+            <button id="increment" onclick="increment()">increment</button>
+        </div>
+    </div>
+
+
+
+    <div class="rightItem">
+        <div class="discription">
+            <h2>Description..:</h2>
+            Selection Sort is a simple sorting algorithm that works by repeatedly finding the <br> minimum element from the unsorted part of the array and placing it at the <br>beginning. It divides the array into two parts: the sorted part on the left <br> and the unsorted part on the right <br>
+    
+            The algorithm works as follows: <br>
+    
+    1. Find the minimum element in the unsorted part of the array.<br>
+    2. Swap the minimum element with the first element of the unsorted part.<br>
+    3. Move the boundary between the sorted and unsorted parts one element to the right.<br>
+    4. Repeat steps 1-3 until the entire array is sorted.<br>
+    <br>
+    <i><b>The time complexity of Selection Sort is O(n^2),</b></i><br>
+          </div>
+      <div class="codeHolder">
+        <h2>Code in C++ </h2>
+        void selectionSort(int array[], int size) { <br>
+            for (int step = 0; step < size - 1; step++) { <br>
+              int min_idx = step; <br>
+              for (int i = step + 1; i < size; i++) {
+                <div class="comment">// To sort in descending order</div> 
+                <div class="comment">// Select the minimum element in each loop </div>
+                if (array[i] < array[min_idx]) <br>
+                  min_idx = i;<br>
+              }
+          
+              <div class="comment">// put min at the correct position</div>
+              swap(&array[min_idx], &array[step]);<br>
+            }<br>
+          }<br>
+          
+      </div>
+    </div>
+
+
+    <div class="footer"></div>
+
+    <script src="sorting.js"></script>
+  </body>
+</html>

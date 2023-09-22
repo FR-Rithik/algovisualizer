@@ -1,0 +1,118 @@
+body{
+    max-height: 100vh;
+    margin: 0;
+    padding: 0;
+    background-color: rgba(69, 215, 208, 0.441); 
+    /* background: linear-gradient(to right, rgba(73, 74, 74, 0.441), rgb(69, 215, 208),rgba(69, 215, 208, 0.441),rgba(69, 215, 208, 0.441),rgba(131, 241, 235, 0.441));  */
+    overflow: auto;
+  }
+  .header {
+    color: rgb(165, 181, 195);
+    background-color: #333;
+    font-family: "PT Sans", sans-serif;
+    font-size: 15px;
+    font-weight: 600;
+    height: 40px;
+    padding-left: 10px;
+    padding-right: 40px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    position: relative;
+    justify-content: flex-start;
+  }
+  
+  .headerImg {
+    height: 20px;
+    width: 50px;
+    padding-right: 40px;
+    
+  }
+
+
+.header {
+    color: rgb(165, 181, 195);
+    background-color: #333;
+    font-family: "PT Sans", sans-serif;
+    font-size: 15px;
+    font-weight: 600;
+    height: 40px;
+    padding-left: 10px;
+    padding-right: 40px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    position: relative;
+    justify-content: flex-start;
+}
+
+.headerImg {
+    height: 20px;
+    width: 50px;
+    padding-right: 40px;
+    
+}
+h1 {
+    font-size:40px;
+    color: #333;
+}
+.container{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+.left{
+    position: absolute;
+    left: 100px;
+    top: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.right{
+    display: flex;
+    flex-direction: row;
+}
+.algo{
+    position: absolute;
+    top: 50px;
+    right:0px;
+    width: 500px;
+    height: 300px;
+    background-color: rgba(120, 120, 201, 0.515);
+}
+.discription{
+    position: absolute;
+    top: 360px;
+    right: 00px;
+    width: 500px;
+    height: 300px;
+    background-color: rgba(93, 93, 192, 0.515);
+}
+#graph-container {
+    background-color: rgba(249, 249, 249, 0);
+    margin: 20px auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 800px;
+    height: 470px;
+}
+
+button {
+    margin-top: 20px;
+    padding: 10px 20px;
+    font-size: 16px;
+}
+.createBtn, .traverseBtn{
+    background-color: aqua;
+    margin-left: 15px;
+    border: 1px transparent;
+    border-radius: 15%;
+}
+.createBtn:hover, .traverseBtn:hover{
+    background-color: rgba(2, 129, 129, 0.745);
+    cursor: pointer;
+}

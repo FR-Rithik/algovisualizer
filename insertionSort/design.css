@@ -1,0 +1,219 @@
+body{
+    max-height: 100vh;
+    margin: 0;
+    padding: 0;
+    background-color: rgba(69, 215, 208, 0.441); 
+    /* background: linear-gradient(to right, rgba(73, 74, 74, 0.441), rgb(69, 215, 208),rgba(69, 215, 208, 0.441),rgba(69, 215, 208, 0.441),rgba(131, 241, 235, 0.441));  */
+    overflow: hidden;
+}
+.header {
+    color: rgb(165, 181, 195);
+    background-color: #333;
+    font-family: "PT Sans", sans-serif;
+    font-size: 15px;
+    font-weight: 600;
+    height: 40px;
+    padding-left: 10px;
+    padding-right: 40px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    position: relative;
+    justify-content: flex-start;
+}
+.home{
+    padding: 8px;
+    color: aliceblue;
+    position: absolute;
+    right: 20px;
+    background-color: rgb(112, 115, 115);
+    text-decoration: none;
+    border: transparent;
+    border-radius: 5px;
+  }
+  .header .home:hover {
+    color: rgb(209, 192, 192);
+    background-color: rgb(0, 0, 0);
+    box-shadow: 3px 3px 6px 0px inset #ffffff76, -3px -3px 6px 1px inset rgba(255, 255, 255, 0.96);
+  }
+.headerImg {
+    height: 20px;
+    width: 50px;
+    padding-right: 40px;
+    
+}
+h1{
+    top: 0px;
+    margin: 0px;
+    /* position:sticky; */
+    /* font-family: 'papyrus','Copperplate Gothic Light', sans-serif; */
+    text-align: center;
+    font-size: 60px;
+    font-weight:bold;
+    color: #333;
+    text-shadow:5px 5px 5px rgb(79, 125, 156);
+    background-color: rgba(0, 0, 0, 0);
+    /* background-image: url("all.png"); */
+  }
+
+  body::-webkit-scrollbar {
+    width: 0.5em; /* Adjust the width as needed */
+    background-color: transparent; /* Set the background color of the scrollbar */
+  }
+    body::-webkit-scrollbar-thumb {
+      background-color: transparent /* Set the color of the scrollbar thumb */
+    }
+    
+    body::-webkit-scrollbar-track {
+      background-color:transparent /* Set the color of the scrollbar track */
+    }
+.container{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction:row;
+    justify-content: space-between;
+}
+.rightItem{
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    background-color: rgba(255, 255, 255, 0);
+    width: 300px;
+    line-height: 1.3;
+}
+
+.codeHolder{
+    position: relative;
+    top: 10px;
+    height: 250px;
+    width: 300px;
+    padding: 20px;
+    padding-top: 30px;
+    background-color: rgba(14, 131, 160, 0.631);
+    background-color: rgba(69, 215, 208, 0.441); 
+    overflow: auto;
+}
+.codeHolder::-webkit-scrollbar{
+    width: .5em;
+    background-color: transparent; /* Set the color of the scrollbar thumb */
+}
+.codeHolder::-webkit-scrollbar-thumb{
+    background-color: rgb(255, 251, 251);
+}
+.codeHolder::-webkit-scrollbar-track{
+    background-color: black;
+}
+.discription{
+    position: relative;
+    top: 0px;
+    height: 250px;
+    width: 300px;
+    padding: 20px;
+    overflow: auto;
+    background-color: rgba(5, 170, 212, 0.631);
+    background-color: rgba(0, 164, 156, 0.441); 
+}
+.discription::-webkit-scrollbar {
+  width: 0.5em; /* Adjust the width as needed */
+  background-color: transparent; /* Set the background color of the scrollbar */
+}
+  .discription::-webkit-scrollbar-thumb {
+    background-color: rgb(250, 250, 250) /* Set the color of the scrollbar thumb */
+}
+  
+  .discription::-webkit-scrollbar-track {
+    background-color: rgb(0, 0, 0) /* Set the color of the scrollbar track */
+}
+
+.rightItem :hover:not(.comment,h2){
+    color: rgb(0, 0, 0);
+    color: rgb(3, 57, 39);
+    background-color: rgb(63, 218, 226);
+    cursor: pointer;
+    height: 500px;
+    width: 400px;
+}
+
+.leftItem{
+    padding-left: 101px;
+    list-style:circle;
+    width: 70%;
+    max-height: 100vh;
+    background-color: rgba(69, 215, 208, 0); 
+    
+    display: flex;
+    flex-direction: column;
+}
+.comment{
+    color: rgb(106, 100, 16);
+}
+
+#parentDiv{
+    max-height: 100vh;
+    margin-right: 30px;
+    display: flex;
+    position: relative;
+    flex-wrap:no-wrap;
+    /* height: 100px; */
+    align-items: flex-end;
+    /* background-color: azure; */
+    background-color: rgba(0, 0, 0, 0); 
+    justify-content:center;
+    
+    
+}
+.childDiv{
+    /* padding : 10px; */
+    margin: 5px;
+    margin-top:15px;
+    margin-bottom: 15px;
+    background-color: rgb(4, 111, 111);
+    /* transition: height 0.2s; */
+    flex-grow: 1;
+    /* transform: rotateX(180deg); */
+    /* align-items: center;
+    justify-content: center; */
+    text-align: center;
+}
+#startBtn, #restartBtn{ 
+    padding: 10px;
+    padding-right: 20px ;
+    padding-left: 20px;
+    margin-right: 50px;
+    float: right;
+    color: rgb(0, 0, 0);
+    font-size: 15px;
+    background-color: aqua;
+    border: transparent;
+    border-radius: 12px;
+}
+#buttonBox{
+    margin-top: 20px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content:center;
+    background-color: rgba(69, 215, 208, 0); 
+    height: 40px;
+}
+#startBtn:hover, #restartBtn:hover{
+    background-color: rgba(1, 95, 95, 0.538);
+}
+.label{
+    /* //color: aqua; */
+    margin-top: 5px;
+    color: white;
+    font-weight: 800;
+}
+
+
+
+.footer {
+    background-color: black;
+    height: 10px;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}

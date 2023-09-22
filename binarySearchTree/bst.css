@@ -1,0 +1,145 @@
+body{
+  max-height: 100vh;
+  margin: 0;
+  padding: 0;
+  background-color: rgba(69, 215, 208, 0.441); 
+  /* background: linear-gradient(to right, rgba(73, 74, 74, 0.441), rgb(69, 215, 208),rgba(69, 215, 208, 0.441),rgba(69, 215, 208, 0.441),rgba(131, 241, 235, 0.441));  */
+  overflow: auto;
+}
+.header {
+  color: rgb(165, 181, 195);
+  background-color: #333;
+  font-family: "PT Sans", sans-serif;
+  font-size: 15px;
+  font-weight: 600;
+  height: 40px;
+  padding-left: 10px;
+  padding-right: 40px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  position: relative;
+  justify-content: flex-start;
+}
+
+.home{
+  padding: 8px;
+  color: aliceblue;
+  position: absolute;
+  right: 20px;
+  background-color: rgb(112, 115, 115);
+  text-decoration: none;
+  border: transparent;
+  border-radius: 5px;
+}
+.header .home:hover {
+  color: rgb(209, 192, 192);
+  background-color: rgb(0, 0, 0);
+  box-shadow: 3px 3px 6px 0px inset #ffffff76, -3px -3px 6px 1px inset rgba(255, 255, 255, 0.96);
+}
+.headerImg {
+  height: 20px;
+  width: 50px;
+  padding-right: 40px;
+  
+}
+h1{
+    top: 0px;
+    margin: 0px;
+    /* position:sticky; */
+    /* font-family: 'papyrus','Copperplate Gothic Light', sans-serif; */
+    text-align: center;
+    font-size: 60px;
+    font-weight:bold;
+    color: #333;
+    text-shadow:5px 5px 5px rgb(79, 125, 156);
+    background-color: rgba(0, 0, 0, 0);
+}
+  .bstContainer{
+    display: flex;
+    flex-direction: column;
+  }
+  #tree-svg {
+    display: block;
+    width: 70%;
+    height: 570px;
+  }
+  
+  .node {
+    fill: rgb(6, 127, 168);
+  }
+  
+  .line {
+    stroke: rgba(4, 4, 4, 0.565);
+  }
+
+  .left{
+  }
+  #buttons{
+    position: absolute;
+    bottom: 50px;
+    left: 20%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .inputDiv{
+    margin-bottom: 10px;
+    width: 350px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+}
+  #userInput{
+    width: 290px;
+    margin-bottom: 5px;
+    margin-top: 5px;
+    height: 25px;
+    border: transparent;
+    border-radius: 5px;
+  }
+.button{
+  align-items: center;
+  justify-content: center;
+}
+.inputBtn,.search,.delete{
+
+  padding: 5px;
+  margin-right: 50px;
+  width: 70px;
+  float: right;
+  color: rgb(0, 0, 0);
+  font-size: 15px;
+  background-color: aqua;
+  border: transparent;
+  border-radius: 12px;
+}
+.buttons .inputBtn:hover,
+.buttons .search:hover,
+.buttons .delete:hover {
+  background-color: rgba(2, 129, 129, 0.745);
+  cursor: pointer;
+}
+.right{
+  display: flex;
+  flex-direction: row;
+}
+.algo{
+  position: absolute;
+  top: 50px;
+  right:0px;
+  width: 500px;
+  height: 300px;
+  background-color: rgba(120, 120, 201, 0.515);
+}
+.discription{
+  position: absolute;
+  top: 360px;
+  right: 00px;
+  width: 500px;
+  height: 300px;
+  background-color: rgba(93, 93, 192, 0.515);
+}
+  

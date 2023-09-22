@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Binary Search Tree Visualizer</title>
+    <link rel="stylesheet" type="text/css" href="bst.css" />
+  </head>
+  <body>
+    <div class="header">
+      <img src="../frontPage/BE-Computer-Science2.png" alt="" class="headerImg" />
+      VisAlgo.com
+      <a href="../frontPage/frontPage.html" class="home"> Home</a>
+    </div>
+    <div class="container">
+      <div class="left">
+          <h1>Binary Search Tree</h1>
+        <div class="bstContainer">
+          <svg id="tree-svg" viewBox="0 0 800 600"></svg>
+
+          <div id="buttons">
+            <div class="inputDiv">
+              <label for="userInput" class="label">Insert here:</label>
+              <input
+                type="text"
+                id="userInput"
+                placeholder="Enter your input"
+              />
+            </div>
+            <div class="buttons">
+            <button class="inputBtn" id="inputButton">Insert</button>
+            <button class="search" id="searchButton">Search</button>
+            <button class="delete" onclick="deleteNode()">delete</button>
+            </div>
+            
+            </div>
+          </div>
+        </div>
+        <div class="right">
+        <div class="algo"></div>
+        <div class="discription"></div>
+        </div>
+      </div>
+
+    <script src="bst.js"></script>
+  </body>
+</html>

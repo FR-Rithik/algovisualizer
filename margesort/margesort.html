@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="designMarge.css" />
+  </head>
+  <body>
+    <div class="header">
+      <img src="../frontPage/BE-Computer-Science2.png" alt="" class="headerImg" />
+      VisAlgo.com
+      <a href="../frontPage/frontPage.html" class="home"> Home</a>
+    </div>
+    
+ 
+       <div class="container">
+        
+       <div class="left">
+        <h1>MargeSort</h1>
+         <div class="visDiv"></div>
+         <div class="buttons">
+           <button class="showRec" onclick="createArray()">Create Array</button>
+           <button onclick="sorting()">Sort</button>
+         </div>
+       </div>
+       
+
+         <div class="right">
+          <h2>The Code in C++</h2> 
+          <pre><code>
+            MergeSort(arr):
+                if length(arr) &lt;= 1:
+                    return arr
+            
+                middle = length(arr) / 2
+                left = MergeSort(arr[0:middle])
+                right = MergeSort(arr[middle:])
+            
+                return Merge(left, right)
+            
+            Merge(left, right):
+                merged = []
+                while left is not empty and right is not empty:
+                    if left[0] &lt;= right[0]:
+                        merged.append(left[0])
+                        left = left[1:]
+                    else:
+                        merged.append(right[0])
+                        right = right[1:]
+            
+                return merged + left + right
+              </code></pre>
+        </div>
+     </div>
+     
+      
+
+    <script src="sortingMarge.js"></script>
+  </body>
+</html>
