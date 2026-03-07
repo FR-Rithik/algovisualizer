@@ -31,3 +31,4 @@ An interactive web-based platform for visualizing algorithms and data structures
 - **Architecture**: Modular component-based structure
 
 ## 📁 Project Structure
+algovisualizer/ ├── frontPage/ # Main landing page │ ├── frontPage.html # Entry point │ ├── frontPage.css # Landing page styles │ └── fontPage.js # Interactive demos and navigation ├── insertionSort/ # Selection Sort visualizer │ ├── insertionsort.html │ ├── design.css │ └── sorting.js ├── margesort/ # Merge Sort visualizer │ ├── margesort.html │ ├── designMarge.css │ └── sortingMarge.js ├── binarySearchTree/ # BST operations │ ├── bst.html │ ├── bst.css │ └── bst.js ├── Treetraversal/ # Tree DFS visualization │ ├── html.html │ ├── styles.css │ └── script.js └── linkList/ # Linked List operations ├── linklist.html ├── linklistStyle.css └── linklist.js
