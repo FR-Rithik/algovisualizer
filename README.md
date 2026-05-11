@@ -29,5 +29,3 @@ An interactive web-based platform for visualizing algorithms and data structures
 - **Graphics**: SVG for scalable visualizations
 - **Animations**: CSS transitions and JavaScript intervals
 - **Architecture**: Modular component-based structure
-
-## 📁 Project Structure
